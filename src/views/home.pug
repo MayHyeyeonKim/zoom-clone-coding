@@ -13,7 +13,7 @@ html(lang="en")
             div#welcome
                 form
                     input#roomName(placeholder="Which room do you want to join?" required, type="text")
-                    input#name(placeholder="Put your nickname here!" required, type="text")
+                    //- input#name(placeholder="Put your nickname here!" required, type="text")
                     button Enter Room
             div#room
                 h3
@@ -26,4 +26,4 @@ html(lang="en")
                     button Send!
 
     script(src="/socket.io/socket.io.js") 
-    script(src="/public/js/app.js") 
+    script(src="/public/js/app.js")  
