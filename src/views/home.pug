@@ -10,20 +10,10 @@ html(lang="en")
         header 
             h1 Welcome to May's Zoom
         main            
-            div#welcome
-                form
-                    input#roomName(placeholder="Which room do you want to join?" required, type="text")
-                    //- input#name(placeholder="Put your nickname here!" required, type="text")
-                    button Enter Room
-            div#room
-                h3
-                ul
-                form#name
-                    input(placeholder="Nickname" required, type="text")
-                    button Click!
-                form#msg
-                    input(placeholder="Message" required, type="text")
-                    button Send!
-
+        div#myStream
+                video#myFace(autoplay,playsinline, width="400", height="400")
+                button#mute Mute
+                button#camera Turn Camera Off
+                select#cameras
     script(src="/socket.io/socket.io.js") 
-    script(src="/public/js/app.js")  
+    script(src="/public/js/app.js")
